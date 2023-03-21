@@ -1,0 +1,5 @@
+package com.bms.booking.service;
+
+public class BookingService {
+
+}

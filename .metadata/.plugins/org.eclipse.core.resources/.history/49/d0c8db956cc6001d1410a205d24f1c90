@@ -1,0 +1,83 @@
+insert into movie (id, name) values(1, 'John Wick 4');
+insert into movie (id, name) values(2, 'Avatar');
+insert into movie (id, name) values(3, 'FAST X');
+insert into theater (id, address, city, name) values(1, '76, Ganesh Chandra Avenue, Bow Bazaar', 'Kolkata','PVR');
+insert into theater (id, address, city, name)  values(2, '98, Nagendra Gardens, Ramachandrapura','Bangalore', 'INOX');
+insert into theater (id, address, city, name)  values(3, 'IB-4, salt lake,bidhannagar','Kolkata', 'Carnival Cinemas');
+insert into theater_movie values(1,1);
+insert into theater_movie values(1,2);
+insert into theater_movie values(2,1);
+insert into theater_movie values(2,3);
+insert into theater_movie values(3,2);
+insert into theater_movie values(3,3);
+insert into time_slot (id, time_slot, movie_id, theater_id) values (1, '11:00 AM',1,1);
+insert into time_slot (id, time_slot, movie_id, theater_id) values (2, '09:00 AM',1,1);
+insert into time_slot (id, time_slot, movie_id, theater_id) values (3, '11:00 AM',1,2);
+insert into time_slot (id, time_slot, movie_id, theater_id) values (4, '06:00 PM',1,2);
+insert into time_slot (id, time_slot, movie_id, theater_id) values (5, '09:00 AM',2,1);
+insert into time_slot (id, time_slot, movie_id, theater_id) values (6, '06:00 PM',2,1);
+insert into time_slot (id, time_slot, movie_id, theater_id) values (7, '11:00 AM',2,3);
+insert into time_slot (id, time_slot, movie_id, theater_id) values (8, '05:30 PM',2,3);
+insert into time_slot (id, time_slot, movie_id, theater_id) values (9, '09:00 AM',3,2);
+insert into time_slot (id, time_slot, movie_id, theater_id) values (10, '06:00 PM',3,2);
+insert into time_slot (id, time_slot, movie_id, theater_id) values (11, '11:00 AM',3,3);
+insert into time_slot (id, time_slot, movie_id, theater_id) values (12, '05:30 PM',3,3);
+insert into seat (id, price, seat_number, type, slot_id) values (1, 299, 'A1', 'GLOD', 1);
+insert into seat (id, price, seat_number, type, slot_id) values (2, 299, 'A2', 'GLOD', 1);
+insert into seat (id, price, seat_number, type, slot_id) values (3, 199, 'B1', 'SILVER', 1);
+insert into seat (id, price, seat_number, type, slot_id) values (4, 199, 'B2', 'SILVER', 1);
+
+insert into seat (id, price, seat_number, type, slot_id) values (1, 299, 'A1', 'GLOD', 2);
+insert into seat (id, price, seat_number, type, slot_id) values (2, 299, 'A2', 'GLOD', 2);
+insert into seat (id, price, seat_number, type, slot_id) values (3, 199, 'B1', 'SILVER', 2);
+insert into seat (id, price, seat_number, type, slot_id) values (4, 199, 'B2', 'SILVER', 2);
+
+insert into seat (id, price, seat_number, type, slot_id) values (1, 299, 'A1', 'GLOD', 3);
+insert into seat (id, price, seat_number, type, slot_id) values (2, 299, 'A2', 'GLOD', 3);
+insert into seat (id, price, seat_number, type, slot_id) values (3, 199, 'B1', 'SILVER', 3);
+insert into seat (id, price, seat_number, type, slot_id) values (4, 199, 'B2', 'SILVER', 3);
+
+insert into seat (id, price, seat_number, type, slot_id) values (1, 299, 'A1', 'GLOD', 4);
+insert into seat (id, price, seat_number, type, slot_id) values (2, 299, 'A2', 'GLOD', 4);
+insert into seat (id, price, seat_number, type, slot_id) values (3, 199, 'B1', 'SILVER', 4);
+insert into seat (id, price, seat_number, type, slot_id) values (4, 199, 'B2', 'SILVER', 4);
+
+insert into seat (id, price, seat_number, type, slot_id) values (1, 299, 'A1', 'GLOD', 5);
+insert into seat (id, price, seat_number, type, slot_id) values (2, 299, 'A2', 'GLOD', 5);
+insert into seat (id, price, seat_number, type, slot_id) values (3, 199, 'B1', 'SILVER', 5);
+insert into seat (id, price, seat_number, type, slot_id) values (4, 199, 'B2', 'SILVER', 5);
+
+insert into seat (id, price, seat_number, type, slot_id) values (1, 299, 'A1', 'GLOD', 6);
+insert into seat (id, price, seat_number, type, slot_id) values (2, 299, 'A2', 'GLOD', 6);
+insert into seat (id, price, seat_number, type, slot_id) values (3, 199, 'B1', 'SILVER', 6);
+insert into seat (id, price, seat_number, type, slot_id) values (4, 199, 'B2', 'SILVER', 6);
+
+insert into seat (id, price, seat_number, type, slot_id) values (1, 299, 'A1', 'GLOD', 7);
+insert into seat (id, price, seat_number, type, slot_id) values (2, 299, 'A2', 'GLOD', 7);
+insert into seat (id, price, seat_number, type, slot_id) values (3, 199, 'B1', 'SILVER', 7);
+insert into seat (id, price, seat_number, type, slot_id) values (4, 199, 'B2', 'SILVER', 7);
+
+insert into seat (id, price, seat_number, type, slot_id) values (1, 299, 'A1', 'GLOD', 8);
+insert into seat (id, price, seat_number, type, slot_id) values (2, 299, 'A2', 'GLOD', 8);
+insert into seat (id, price, seat_number, type, slot_id) values (3, 199, 'B1', 'SILVER', 8);
+insert into seat (id, price, seat_number, type, slot_id) values (4, 199, 'B2', 'SILVER', 8);
+
+insert into seat (id, price, seat_number, type, slot_id) values (1, 299, 'A1', 'GLOD', 9);
+insert into seat (id, price, seat_number, type, slot_id) values (2, 299, 'A2', 'GLOD', 9);
+insert into seat (id, price, seat_number, type, slot_id) values (3, 199, 'B1', 'SILVER', 9);
+insert into seat (id, price, seat_number, type, slot_id) values (4, 199, 'B2', 'SILVER', 9);
+
+insert into seat (id, price, seat_number, type, slot_id) values (1, 299, 'A1', 'GLOD', 10);
+insert into seat (id, price, seat_number, type, slot_id) values (2, 299, 'A2', 'GLOD', 10);
+insert into seat (id, price, seat_number, type, slot_id) values (3, 199, 'B1', 'SILVER', 10);
+insert into seat (id, price, seat_number, type, slot_id) values (4, 199, 'B2', 'SILVER', 10);
+
+insert into seat (id, price, seat_number, type, slot_id) values (1, 299, 'A1', 'GLOD', 11);
+insert into seat (id, price, seat_number, type, slot_id) values (2, 299, 'A2', 'GLOD', 11);
+insert into seat (id, price, seat_number, type, slot_id) values (3, 199, 'B1', 'SILVER', 11);
+insert into seat (id, price, seat_number, type, slot_id) values (4, 199, 'B2', 'SILVER', 11);
+
+insert into seat (id, price, seat_number, type, slot_id) values (1, 299, 'A1', 'GLOD', 12);
+insert into seat (id, price, seat_number, type, slot_id) values (2, 299, 'A2', 'GLOD', 12);
+insert into seat (id, price, seat_number, type, slot_id) values (3, 199, 'B1', 'SILVER', 12);
+insert into seat (id, price, seat_number, type, slot_id) values (4, 199, 'B2', 'SILVER', 12);

@@ -1,0 +1,9 @@
+insert into movie values(1, 'John Wick 4', 'Action', 'English');
+insert into movie values(2, 'Avatar', 'Adventure', 'English');
+insert into movie values(3, 'FAST X', 'Action', 'English');
+
+
+
+insert into theater values(1, 'PVR', 1)
+insert into theater values(2, 'INOX', 1)
+insert into theater values(3, 'Carnival Cinemas', 1)

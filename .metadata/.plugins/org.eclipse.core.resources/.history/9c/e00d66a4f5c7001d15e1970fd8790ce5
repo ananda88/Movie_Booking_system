@@ -1,0 +1,5 @@
+package com.bms.booking.consumer;
+
+public class KafkaConsumer {
+
+}

@@ -1,0 +1,21 @@
+package com.bms.theater.model;
+
+public class Theater {
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Long id;
+	
+	private String name;
+	
+	private String city;
+	
+	private String address;
+	
+	private List<Seat> seats;
+	
+	private List<Movie> movies;
+	
+	
+	
+}

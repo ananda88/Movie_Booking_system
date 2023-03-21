@@ -1,0 +1,27 @@
+package com.bms.payment.dto;
+
+public class Payment {
+
+	private Long bookingId;
+	
+	private double price;
+
+	public Long getBookingId() {
+		return bookingId;
+	}
+
+	public void setBookingId(Long bookingId) {
+		this.bookingId = bookingId;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	
+	
+	
+}

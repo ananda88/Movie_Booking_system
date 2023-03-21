@@ -1,0 +1,5 @@
+package com.bms.movie.model;
+
+public class Theater {
+
+}

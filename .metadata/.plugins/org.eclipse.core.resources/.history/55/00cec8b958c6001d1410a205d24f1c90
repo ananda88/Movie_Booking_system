@@ -1,0 +1,5 @@
+package com.bms.theater.controller;
+
+public class TheaterController {
+
+}

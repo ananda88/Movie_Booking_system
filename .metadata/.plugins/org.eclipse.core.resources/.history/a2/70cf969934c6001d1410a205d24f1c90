@@ -1,0 +1,16 @@
+package com.bms.movie.repository;
+
+import java.util.Collection;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+
+import com.bms.movie.model.Movie;
+
+public interface MovieRepository extends CrudRepository<Movie, Long> {
+	
+	@Query(value="select * from movie m, theater t, movie_theater mt where m.id=mt.movie_id and t.id=mt.theater_id and t.city = ?1"
+			, nattiveQuery=true)
+	Collection<Movie> findMovieByCity(String city);
+
+}

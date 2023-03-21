@@ -1,0 +1,14 @@
+insert into theater (id, name, address, city) values (1, 'INOX', 'south city', 'kolkata');
+insert into theater (id, name, address, city) values (2, 'CARNIVAL', 'salt lale', 'kolkata');
+insert into theater (id, name, address, city) values (2, 'PVR', 'white field', 'bangalore');
+
+insert into movie (id, name, genere) values (1, 'John Wick', 'Action);
+insert into movie (id, name, genere) values (2, 'Eken babu', 'Adventure);
+insert into movie (id, name, genere) values (3, 'Fast X', 'Action);
+
+insert into theater_movie (theater_id, movie_id) values (1,2);
+insert into theater_movie (theater_id, movie_id) values (1,1);
+insert into theater_movie (theater_id, movie_id) values (2,1);
+insert into theater_movie (theater_id, movie_id) values (2,3);
+insert into theater_movie (theater_id, movie_id) values (3,1);
+insert into theater_movie (theater_id, movie_id) values (3,3);

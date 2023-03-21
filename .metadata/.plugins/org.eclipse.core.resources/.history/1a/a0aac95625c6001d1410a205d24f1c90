@@ -1,0 +1,5 @@
+package com.bms.movie.controller;
+
+public class MovieController {
+
+}

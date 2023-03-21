@@ -1,0 +1,15 @@
+package com.bms.theater.model;
+
+public class TimeSlot {
+	
+	private Long id;
+	
+	private String timeSlot;
+	
+	private Movie movie;
+	
+	private Theater theater;
+	
+	
+
+}

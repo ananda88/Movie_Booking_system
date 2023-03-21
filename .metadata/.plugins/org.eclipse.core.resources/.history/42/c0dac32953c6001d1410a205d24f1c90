@@ -1,0 +1,3 @@
+insert into movie (id, name) values(1, 'John Wick 4');
+insert into movie (id, name) values(2, 'Avatar');
+insert into movie (id, name) values(3, 'FAST X');

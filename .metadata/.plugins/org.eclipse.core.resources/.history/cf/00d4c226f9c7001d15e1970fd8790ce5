@@ -1,0 +1,9 @@
+package com.bms.payment.dto;
+
+public class PaymentEvent {
+	
+	private Long bookingId;
+	
+	private String status;
+
+}

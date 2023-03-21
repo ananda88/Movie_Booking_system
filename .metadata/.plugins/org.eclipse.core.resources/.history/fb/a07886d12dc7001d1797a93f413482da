@@ -1,0 +1,5 @@
+package com.bms.theater.service;
+
+public class TimeSlotService {
+
+}

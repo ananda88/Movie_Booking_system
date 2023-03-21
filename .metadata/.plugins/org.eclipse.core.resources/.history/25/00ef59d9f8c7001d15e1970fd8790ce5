@@ -1,0 +1,11 @@
+package com.bms.payment.dto;
+
+public class Payment {
+
+	private Long bookingId;
+	
+	private double price;
+	
+	
+	
+}

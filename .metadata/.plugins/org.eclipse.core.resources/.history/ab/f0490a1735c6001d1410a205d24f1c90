@@ -1,0 +1,23 @@
+package com.bms.movie.service;
+
+import org.springframework.stereotype.Service;
+
+import com.bms.movie.model.Movie;
+import com.bms.movie.repository.MovieRepository;
+
+@Service
+public class MovieService {
+
+	
+	private final MovieRepository movieRepository;
+
+	public MovieService(MovieRepository movieRepository) {
+		super();
+		this.movieRepository = movieRepository;
+	}
+	
+	public Iterable<Movie> getAll(){
+		return movieRepository.findAll();
+	}
+	
+}

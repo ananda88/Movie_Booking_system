@@ -1,0 +1,5 @@
+package com.bms.theater.consumer;
+
+public class KafkaConsumer {
+
+}

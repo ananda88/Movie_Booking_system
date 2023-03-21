@@ -1,0 +1,21 @@
+package com.bms.theater.model;
+
+public class Theater {
+	
+	private Long id;
+	
+	private String name;
+	
+	private String address;
+	
+	private List<Movie> movies;
+	
+	private List<TimeSlot> timeSlots;
+	
+	public Theater() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

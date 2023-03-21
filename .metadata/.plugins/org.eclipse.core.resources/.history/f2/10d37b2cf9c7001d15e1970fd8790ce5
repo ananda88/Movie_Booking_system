@@ -1,0 +1,17 @@
+package com.bms.payment.dto;
+
+public class PaymentEvent {
+	
+	private Long bookingId;
+	
+	private String status;
+
+	public PaymentEvent(Long bookingId, String status) {
+		super();
+		this.bookingId = bookingId;
+		this.status = status;
+	}
+	
+	
+
+}

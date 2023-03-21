@@ -1,0 +1,42 @@
+package com.bms.theater.controller;
+
+import java.util.Collection;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.bms.theater.model.Theater;
+import com.bms.theater.model.TimeSlot;
+import com.bms.theater.service.TheaterService;
+import com.bms.theater.service.TimeSlotService;
+
+@RestController
+@RequestMapping("theaters")
+public class TheaterController {
+
+	
+	private final TheaterService theaterService;
+	private final TimeSlotService timeSlotService;
+	public TheaterController(TheaterService theaterService, TimeSlotService timeSlotService) {
+		super();
+		this.theaterService = theaterService;
+		this.timeSlotService = timeSlotService;
+	}
+	
+	@GetMapping
+	@CrossOrigin(origins = "*")
+	public Collection<Theater> getTheatersByCity(@RequestParam("city") String city){
+		return theaterService.getAllTheaterByCity(city);
+	}
+	
+	@GetMapping("/{theaterId}/movie/{movieId}")
+	@CrossOrigin(origins = "*")
+	public Collection<TimeSlot> getTimeSlotByTheaterAndMovie(@PathVariable("theaterId") Long theaterId,
+			@PathVariable("movieId") Long movieId){
+		return timeSlotService.getTimeSlotForMovieAndTheater(theaterId, movieId);
+	}
+}

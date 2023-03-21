@@ -1,0 +1,29 @@
+package com.bms.theater.service;
+
+import java.util.Collection;
+
+import org.springframework.stereotype.Service;
+
+import com.bms.theater.model.Theater;
+import com.bms.theater.repository.TheaterReposioty;
+
+@Service
+public class TheaterService {
+
+	private final TheaterReposioty theaterReposioty;
+
+	public TheaterService(TheaterReposioty theaterReposioty) {
+		super();
+		this.theaterReposioty = theaterReposioty;
+	}
+	
+	public Collection<Theater> getTheatersByCity(String city){
+		Collection<Theater> theaters = theaterReposioty.findTheaterByCity(city);
+		return theaters;
+	}
+	
+	
+	public Collection<Theater> getTheatersForMovie(Long theaterId, Long movieId){
+		theaterReposioty.findTheaterForMovie(theaterId, movieId);
+	}
+}

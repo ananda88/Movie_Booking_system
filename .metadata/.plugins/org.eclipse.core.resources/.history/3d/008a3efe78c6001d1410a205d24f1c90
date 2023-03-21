@@ -1,0 +1,29 @@
+package com.bms.theater.controller;
+
+import java.util.Collection;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.bms.theater.model.Theater;
+import com.bms.theater.service.TheaterService;
+
+@RestController
+@RequestMapping("theaters")
+public class TheaterController {
+	
+	private TheaterService theaterService;
+	
+	public TheaterController(TheaterService theaterService) {
+		super();
+		this.theaterService = theaterService;
+	}
+
+	@GetMapping
+	public Collection<Theater> getTheatersByCity(@RequestParam("city") String city){
+		return theaterService.getTheatersByCity(city);
+	}
+	
+}

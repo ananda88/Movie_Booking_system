@@ -1,0 +1,5 @@
+package com.bms.booking.configuration;
+
+public class KafkaConfiguration {
+
+}

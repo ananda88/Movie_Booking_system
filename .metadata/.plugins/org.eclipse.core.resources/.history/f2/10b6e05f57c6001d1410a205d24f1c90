@@ -1,0 +1,12 @@
+insert into movie (id, name) values(1, 'John Wick 4');
+insert into movie (id, name) values(2, 'Avatar');
+insert into movie (id, name) values(3, 'FAST X');
+insert into theater (id, address, city, name) values(1, '76, Ganesh Chandra Avenue, Bow Bazaar', 'Kolkata','PVR');
+insert into theater (id, address, city, name)  values(2, '98, Nagendra Gardens, Ramachandrapura','Bangalore', 'INOX');
+insert into theater (id, address, city, name)  values(3, 'IB-4, salt lake,bidhannagar','Kolkata', 'Carnival Cinemas');
+insert into theater_movie values(1,1);
+insert into theater_movie values(1,2);
+insert into theater_movie values(2,1);
+insert into theater_movie values(2,3);
+insert into theater_movie values(3,2);
+insert into theater_movie values(3,3);

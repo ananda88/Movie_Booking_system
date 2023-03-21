@@ -1,0 +1,73 @@
+package com.bms.movie.model;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+
+@Entity
+public class Movie {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	
+	private String name;
+	
+	private String genere;
+	
+	private String language;
+	
+	@ManyToMany(fetch = FetchType.LAZY)
+	@JoinTable(name="movie_theater", joinColumns = @JoinColumn(name  = "movie_id"), inverseJoinColumns = @JoinColumn(name = "theater_id"))
+	private List<Theater> theaters;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getGenere() {
+		return genere;
+	}
+
+	public void setGenere(String genere) {
+		this.genere = genere;
+	}
+
+	public String getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(String language) {
+		this.language = language;
+	}
+
+	public List<Theater> getTheaters() {
+		return theaters;
+	}
+
+	public void setTheaters(List<Theater> theaters) {
+		this.theaters = theaters;
+	}
+	
+	
+	
+}

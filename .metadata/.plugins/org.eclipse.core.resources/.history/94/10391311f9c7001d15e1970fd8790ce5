@@ -1,0 +1,5 @@
+package com.bms.payment.dto;
+
+public class PaymentEvent {
+
+}

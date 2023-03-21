@@ -1,0 +1,9 @@
+package com.bms.booking.dto;
+
+public class BookingResponse {
+	
+	private Long id;
+	
+	private String status; 
+
+}

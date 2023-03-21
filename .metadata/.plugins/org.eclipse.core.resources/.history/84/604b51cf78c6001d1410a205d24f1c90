@@ -1,0 +1,18 @@
+package com.bms.theater.repository;
+
+import java.util.Collection;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+
+import com.bms.theater.model.Theater;
+
+public interface TheaterReposioty extends CrudRepository<Theater, Long> {
+	
+	Collection<Theater> findTheaterByCity(String city);
+	
+	@Query(nativeQuery = true,
+			value="select t.* from theater t, theater_movie tm where t.id=tm.theater_id and tm.movie_id=?2 and tm.theater_id=?1")
+	Collection<Theater> findTheaterForMovie(Long thaterId, Long movieId);
+
+}

@@ -1,0 +1,30 @@
+insert into theater (id, name, address, city) values (1, 'INOX', 'south city', 'kolkata');
+insert into theater (id, name, address, city) values (2, 'CARNIVAL', 'salt lale', 'kolkata');
+insert into theater (id, name, address, city) values (2, 'PVR', 'white field', 'bangalore');
+
+insert into movie (id, name, genere) values (1, 'John Wick', 'Action);
+insert into movie (id, name, genere) values (2, 'Eken babu', 'Adventure);
+insert into movie (id, name, genere) values (3, 'Fast X', 'Action);
+
+insert into theater_movie (theater_id, movie_id) values (1,2);
+insert into theater_movie (theater_id, movie_id) values (1,1);
+insert into theater_movie (theater_id, movie_id) values (2,1);
+insert into theater_movie (theater_id, movie_id) values (2,3);
+insert into theater_movie (theater_id, movie_id) values (3,1);
+insert into theater_movie (theater_id, movie_id) values (3,3);
+
+insert into time_slot (id, slot, theater_id, movie_id) values (1, '09:00AM', 1,2);
+insert into time_slot (id, slot, theater_id, movie_id) values (2, '11:00AM', 1,2);
+insert into time_slot (id, slot, theater_id, movie_id) values (3, '09:00AM', 1,1);
+insert into time_slot (id, slot, theater_id, movie_id) values (4, '01:30PM', 1,1);
+insert into time_slot (id, slot, theater_id, movie_id) values (5, '04:00PM', 1,1);
+insert into time_slot (id, slot, theater_id, movie_id) values (6, '09:00AM', 2,1);
+insert into time_slot (id, slot, theater_id, movie_id) values (7, '09:00AM', 2,3);
+insert into time_slot (id, slot, theater_id, movie_id) values (8, '01:30PM', 2,3);
+insert into time_slot (id, slot, theater_id, movie_id) values (9, '06:00PM', 2,3);
+insert into time_slot (id, slot, theater_id, movie_id) values (10, '09:00AM', 3,1);
+insert into time_slot (id, slot, theater_id, movie_id) values (11, '11:00AM', 3,1);
+insert into time_slot (id, slot, theater_id, movie_id) values (12, '09:00AM', 3,3);
+insert into time_slot (id, slot, theater_id, movie_id) values (13, '11:30AM', 3,3);
+insert into time_slot (id, slot, theater_id, movie_id) values (14, '05:00PM', 3,3);
+insert into time_slot (id, slot, theater_id, movie_id) values (15, '09:00PM', 3,3);

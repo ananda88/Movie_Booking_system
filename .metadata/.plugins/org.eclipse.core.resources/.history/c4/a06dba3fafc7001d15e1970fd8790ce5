@@ -1,0 +1,12 @@
+package com.bms.booking.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class BookingService {
+
+	
+	private final BookingRepository bookingRepository;
+	
+	
+}

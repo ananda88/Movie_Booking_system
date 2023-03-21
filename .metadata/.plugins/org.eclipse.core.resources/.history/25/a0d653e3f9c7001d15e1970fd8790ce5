@@ -1,0 +1,31 @@
+package com.bms.booking.consumer;
+
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Service;
+
+import com.bms.booking.dto.TheaterUpdateEvent;
+import com.bms.booking.model.Booking;
+import com.bms.booking.repository.BookingRepository;
+
+@Service
+public class KafkaConsumer {
+	
+	private final BookingRepository bookingRepository;
+	
+	public KafkaConsumer(BookingRepository bookingRepository) {
+		super();
+		this.bookingRepository = bookingRepository;
+	}
+
+	@KafkaListener(topics = "theater_booking", groupId = "booking")
+	public void consumerTheaterEvent(TheaterUpdateEvent event) {
+		Booking booking = bookingRepository.findById(event.getBookingId()).get();
+		if(event.getUpdateStatus().equals("SUCCESS")) {
+			booking.setStatus("PAYMENT_INITIATED");
+		}else {
+			booking.setStatus("BOOKING_FAILED");
+		}
+		bookingRepository.save(booking);
+	}
+	
+}
