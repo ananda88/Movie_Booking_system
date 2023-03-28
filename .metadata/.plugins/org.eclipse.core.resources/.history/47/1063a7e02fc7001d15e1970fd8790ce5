@@ -1,3 +1,0 @@
-insert into theater (id, name, address, city) values (1, 'INOX', 'south city', 'kolkata');
-insert into theater (id, name, address, city) values (2, 'CARNIVAL', 'salt lale', 'kolkata');
-insert into theater (id, name, address, city) values (2, 'PVR', 'white field', 'bangalore');

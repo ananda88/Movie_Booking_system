@@ -1,0 +1,5 @@
+package com.bms.payment.repository;
+
+public interface PaymentReposioty {
+
+}

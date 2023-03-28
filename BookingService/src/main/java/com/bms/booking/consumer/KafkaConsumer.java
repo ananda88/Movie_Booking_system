@@ -3,6 +3,8 @@ package com.bms.booking.consumer;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
@@ -20,6 +22,8 @@ public class KafkaConsumer {
 	private final BookingRepository bookingRepository;
 	
 	private final KafkaTemplate<Long, Object> kafkaTemplate;
+	
+	Logger log = LoggerFactory.getLogger(KafkaConsumer.class);
 	
 	public KafkaConsumer(BookingRepository bookingRepository, KafkaTemplate<Long, Object> kafkaTemplate) {
 		super();
@@ -40,6 +44,7 @@ public class KafkaConsumer {
 	
 	@KafkaListener(topics = "payment_booking", groupId = "booking")
 	public void consumerPaymentEvent(PaymentEvent event) {
+		log.info("Received event : ", event);
 		Booking booking = bookingRepository.findById(event.getBookingId()).get();
 		if(event.getStatus().equals("SUCCESS")) {
 			booking.setStatus("BOOKING_COMPLETE");

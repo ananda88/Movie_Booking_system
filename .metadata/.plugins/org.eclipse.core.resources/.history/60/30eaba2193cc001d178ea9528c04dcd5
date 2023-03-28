@@ -1,0 +1,5 @@
+package com.bms.payment.controller;
+
+public class StripeController {
+
+}
