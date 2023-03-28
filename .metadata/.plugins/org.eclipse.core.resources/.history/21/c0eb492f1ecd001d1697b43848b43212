@@ -24,7 +24,7 @@ import com.stripe.net.Webhook;
 @RestController
 public class StripeController {
 	
-	String endpointSecret = "";
+	String endpointSecret = "whsec_3a865be3821f880f4cbb0a4f46452a33b7cebcd28494fc3f643531162c9d8b56";
 	
 	private final KafkaTemplate<Long, Object> kafkaTemplate;
 	private final PaymentReposioty paymentReposioty;
