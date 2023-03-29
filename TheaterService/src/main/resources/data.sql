@@ -3,7 +3,7 @@ insert into theater (id, name, address, city) values (2, 'CARNIVAL', 'salt lake'
 insert into theater (id, name, address, city) values (3, 'PVR', 'white field', 'bangalore');
 
 insert into movie (id, name, genere) values (1, 'John Wick', 'Action');
-insert into movie (id, name, genere) values (2, 'Eken babu', 'Adventure');
+insert into movie (id, name, genere) values (2, 'Shazam', 'Adventure');
 insert into movie (id, name, genere) values (3, 'Fast X', 'Action');
 
 insert into theater_movie (theater_id, movie_id) values (1,2);

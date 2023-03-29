@@ -1,7 +1,0 @@
-package com.bms.booking.repository;
-
-import org.springframework.data.repository.CrudRepository;
-
-public interface Bookingrepository extends CrudRepository<T, ID> {
-
-}

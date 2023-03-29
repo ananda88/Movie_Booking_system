@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
-    <fullyQualifiedTypeName name="java.util.Collection"/>
-    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnoreProperties"/>
     <fullyQualifiedTypeName name="javax.persistence.FetchType"/>
     <fullyQualifiedTypeName name="javax.websocket.server.PathParam"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
@@ -14,8 +11,6 @@
     <fullyQualifiedTypeName name="com.bms.booking.dto.TheaterRequest"/>
     <fullyQualifiedTypeName name="com.bms.booking.dto.MovieRequest"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="com.bms.booking.repository.Bookingrepository"/>
     <fullyQualifiedTypeName name="com.bms.booking.model.Booking"/>
     <fullyQualifiedTypeName name="com.bms.booking.dto.BookingResponse"/>
@@ -45,7 +40,6 @@
     <fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
     <fullyQualifiedTypeName name="com.bms.payment.model.Payment"/>
     <fullyQualifiedTypeName name="javax.persistence.ElementCollection"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
     <fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
     <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
@@ -60,4 +54,10 @@
     <fullyQualifiedTypeName name="org.springframework.data.web.JsonProjectingMethodInterceptorFactory"/>
     <fullyQualifiedTypeName name="com.google.gson.JsonPrimitive"/>
     <fullyQualifiedTypeName name="com.bms.payment.repository.PaymentReposioty"/>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.common.util.impl.LoggerFactory"/>
+    <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+    <fullyQualifiedTypeName name="org.slf4j.Logger"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 </qualifiedTypeNameHistroy>
